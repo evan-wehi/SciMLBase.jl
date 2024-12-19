@@ -220,7 +220,7 @@ multiple events.
 
 Rest of the arguments have the same meaning as in [`ContinuousCallback`](@ref).
 """
-struct VectorContinuousCallback{F1, F2, F3, F4, F5, T, T2, T3, T4, I, R} <:
+mutable struct VectorContinuousCallback{F1, F2, F3, F4, F5, T, T2, T3, T4, I, R} <:
        AbstractContinuousCallback
     condition::F1
     affect!::F2
